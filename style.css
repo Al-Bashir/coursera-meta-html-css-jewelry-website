@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+    color: #3C486B;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+
+header{
+    margin: 4rem 0 1rem 0;
+}
+
+.logo{
+    text-align: center;
+}
+.logo img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 600px;
+}
+
+nav{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0.5rem;
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+nav ul li a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+nav ul li a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+nav ul li a:hover {
+    color: #F45050;
+}
+
+main{
+    max-width: 90%;
+    overflow: hidden;
+    margin: 3rem auto 3rem auto;
+    display: grid;
+    grid-template-areas:    "header header header"
+                            "left center right";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.promotion{
+    grid-area: header;
+}
+.promotion img{
+    border-radius: 2rem;
+    width: 100%;
+    max-height: 600px;
+} 
+
+.left{
+    grid-area: left;
+}
+
+.center{
+    grid-area: center;
+}
+
+.right{
+    grid-area: right;
+}
+
+article{
+    background-color: #F0F0F0;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.article-img img{
+    width: 100%;
+    min-height: 350px;
+    max-height: 500px;
+}
+
+article h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.2rem 1rem;
+}
+article p{
+    font-size: 1.2rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.product:hover h2{
+    color: #F45050;
+}
+
+footer{
+    max-width: 90%;
+    margin: 5rem auto 5rem auto;
+    display: flex;
+    align-items: center;
+}
+.footer-logo img{
+    max-width: 30%;
+}
+.footer-logo{
+    flex-basis: 50%;
+}
+.copyright{
+    flex-basis: 50%;
+    text-align: right;
+}
